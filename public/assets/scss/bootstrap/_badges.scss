@@ -1,0 +1,185 @@
+/*-------- Labels & Badges -------*/
+
+.label {
+	display: inline;
+	padding: .3em .6em .3em;
+	font-size: 75%;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em;
+	margin-bottom: .5rem;
+}
+.label-pill {
+	padding-right: .6em;
+	padding-left: .6em;
+	border-radius: 10rem;
+}
+.label-info {
+	background-color: #23bcb7;
+}
+.label-danger {
+	background-color: #fe6567;
+}
+.label-warning {
+	background-color: #ffb609;
+}
+.label-success {
+	background-color: #3eb750;
+}
+.label-purple {
+	background-color: #6d33ff;
+}
+.label-pink {
+	background-color: #ff2b88;
+}
+.label-light {
+	background-color: $border-color;
+	color: #3f3e50;
+}
+.label {
+	&.arrowed {
+		position: relative;
+		margin-left: 9px;
+	}
+	&.arrowed-in {
+		position: relative;
+		margin-left: 9px;
+		&:before {
+			display: inline-block;
+			content: "";
+			position: absolute;
+			left: -14px;
+			top: 0;
+			border: 9px solid transparent;
+			border-width: 9px 7px;
+		}
+	}
+	&.arrowed:before {
+		display: inline-block;
+		content: "";
+		position: absolute;
+		left: -14px;
+		top: 0;
+		border: 9px solid transparent;
+		border-width: 9px 7px;
+	}
+	&.arrowed-in-right, &.arrowed-right {
+		position: relative;
+		margin-right: 9px;
+		border-radius: 0 2px 2px 0;
+	}
+}
+.label-info.arrowed:before {
+	border-right-color: #23bcb7;
+}
+.label-danger.arrowed:before {
+	border-right-color: #fe6567;
+}
+.label-success.arrowed:before {
+	border-right-color: #3eb750;
+}
+.label-warning.arrowed:before {
+	border-right-color: #ffb609;
+}
+.btn .badge {
+	position: relative;
+	top: -1px;
+}
+.badge-success {
+	color: #fff;
+	background-color: #3eb750;
+	&[href] {
+		&:focus, &:hover {
+			color: #fff;
+			text-decoration: none;
+			background-color: #3adfab;
+		}
+	}
+}
+.badge-info {
+	color: #fff;
+	background-color: #23bcb7;
+	&[href] {
+		&:focus, &:hover {
+			color: #fff;
+			text-decoration: none;
+			background-color: #1594ef;
+		}
+	}
+}
+.badge-warning {
+	color: #fff;
+	background-color: #ffb609;
+	&[href] {
+		&:focus, &:hover {
+			color: #fff;
+			text-decoration: none;
+			background-color: #fa3;
+		}
+	}
+}
+.badge-danger {
+	color: #fff;
+	background-color: #fe6567;
+	&[href] {
+		&:focus, &:hover {
+			color: #fff;
+			text-decoration: none;
+			background-color: #fb5b50;
+		}
+	}
+}
+.badge-light {
+	color: $text-color;
+	background-color: $border-color;
+	&[href] {
+		&:focus, &:hover {
+			color: #3d4e67;
+			text-decoration: none;
+			background-color: #e4e2ef;
+		}
+	}
+}
+.badge-dark {
+	color: #fff;
+	background-color: #343a40;
+	&[href] {
+		&:focus, &:hover {
+			color: #fff;
+			text-decoration: none;
+			background-color: #1d2124;
+		}
+	}
+}
+.badge-pink {
+	color: #fff;
+	background-color: #ed3284;
+	&[href] {
+		&:focus, &:hover {
+			color: #fff;
+			text-decoration: none;
+			background-color: #ed3284;
+		}
+	}
+}
+.badge {
+	padding: .4em .8em;
+	font-size: 100%;
+	font-weight: 400;
+	border-radius: 3px;
+}
+.badge-pill {
+	padding-right: 1em;
+	padding-left: 1em;
+	border-radius: 10rem;
+}
+.badgetext {
+	float: right;
+}
+.badge-default {
+	background: rgb(224, 228, 236);
+	color: #3d4e67;
+}
+/*-------- Labels & Badges -------*/

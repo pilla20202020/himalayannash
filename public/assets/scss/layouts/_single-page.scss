@@ -1,0 +1,133 @@
+/*-- Single Page--*/
+.single-page {
+	button.dark {
+		border-color: #ff4931;
+		background: #ff4931;
+	}
+	.move button.dark {
+		border-color: #e0b722;
+		background: #e0b722;
+	}
+	.splits p {
+		font-size: 18px;
+	}
+	button {
+		&:active {
+			box-shadow: none;
+		}
+		&:focus {
+			outline: 0;
+		}
+	}
+	>.wrapper3 {
+		width: 100%;
+		padding-top: 8rem;
+	}
+	.wrapper {
+		&.wrapper2 {
+			background: #fff;
+			width: 100%;
+			background: #fff;
+			transition: all .5s;
+			color: #fff;
+			overflow: hidden;
+			border-radius: 5px;
+			text-align: center;
+			top: -37%;
+			left: 4%;
+		}
+		background: #fff;
+		box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.1), 0 2px 9px 0 rgba(62, 57, 107, 0.1);
+		transition: all .5s;
+		color: #838ab6;
+		overflow: hidden;
+		border-radius: 7px;
+		>form {
+			width: 100%;
+			transition: all .5s;
+			background: #fff;
+			width: 100%;
+		}
+		.card-body {
+			padding: 30px;
+		}
+		>form:focus {
+			outline: 0;
+		}
+		#login {
+			visibility: visible;
+		}
+		#register {
+			transform: translateY(-80%) translateX(100%);
+			visibility: hidden;
+		}
+		&.move {
+			#register {
+				transform: translateY(-80%) translateX(0);
+				visibility: visible;
+			}
+			#login {
+				transform: translateX(-100%);
+				visibility: hidden;
+			}
+		}
+		>form>div {
+			position: relative;
+			margin-bottom: 15px;
+		}
+		label {
+			position: absolute;
+			top: -7px;
+			font-size: 12px;
+			white-space: nowrap;
+			background: #fff;
+			text-align: left;
+			left: 15px;
+			padding: 0 5px;
+			color: #3f3e50;
+			font-weight: 500;
+			pointer-events: none;
+		}
+		h3, h4 {
+			margin-bottom: 25px;
+			font-size: 22px;
+			color: #3f3e50;
+		}
+		input {
+			height: 50px;
+			padding: 10px 15px 3px 15px;
+			width: 100%;
+			border-radius: 5px;
+			border: solid 1px $border-color;
+			&:focus {
+				outline: 0;
+				border-color: $border-color;
+			}
+		}
+	}
+	>.wrapper.move {
+		left: 45%;
+		input:focus {
+			border-color: #e0b722;
+		}
+	}
+	width: 100%;
+	margin: 0 auto;
+	display: table;
+	position: relative;
+	border-radius: 7px;
+	&.single-pageimage {
+		min-height: 387px;
+		&::before {
+			content: '';
+			background: rgba(255, 255, 255, 0.5);
+		}
+	}
+	>.log-wrapper {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: right;
+		color: #fff;
+	}
+}
+/*-- Single Page--*/

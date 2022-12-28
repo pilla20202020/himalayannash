@@ -1,0 +1,75 @@
+/*-------- Media Styles -------*/
+
+.media {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	margin-top: 15px;
+}
+.mediaicon {
+	font-size: 18px;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 20px;
+}
+.media-body {
+	-ms-flex: 1;
+	flex: 1;
+	zoom: 1;
+	overflow: hidden;
+}
+.mediafont {
+	font-size: 16px;
+	font-weight: 600;
+}
+.media-object {
+	display: block;
+}
+.media {
+	img {
+		width: 45px;
+		height: 45px;
+	}
+	&.meida-md img {
+		width: 65px;
+		height: 65px;
+	}
+	&.meida-lg img {
+		width: 80px;
+		height: 80px;
+	}
+}
+.media-right, .media>.pull-right {
+	padding-left: 10px;
+}
+.media-body, .media-left, .media-right {
+	display: table-cell;
+	vertical-align: top;
+}
+.media-heading {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+.media-body {
+	h4 {
+		font-weight: 500;
+		font-size: 16px;
+	}
+	.card-item-desc a {
+		color: #878598;
+	}
+}
+.media-middle {
+	vertical-align: middle;
+}
+.media-bottom {
+	vertical-align: bottom;
+}
+.media-left, .media>.pull-left {
+	padding-right: 10px;
+}
+/*-------- Media Styles -------*/
